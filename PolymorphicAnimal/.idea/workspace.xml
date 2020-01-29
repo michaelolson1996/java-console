@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19cc5497-a560-46a4-9c2f-a31e5e4a5615" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WzAxL3nQ0uY2Kp6kMH8PI4mJ3w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../College" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.neumont.csc150.c.animals.TestDriver" />
+      <module name="PolymorphicAnimal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.neumont.csc150.c.animals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestDriver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19cc5497-a560-46a4-9c2f-a31e5e4a5615" name="Default Changelist" comment="" />
+      <created>1580142294700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580142294700</updated>
+      <workItem from="1580142297988" duration="1359000" />
+      <workItem from="1580223930051" duration="4257000" />
+      <workItem from="1580235543060" duration="792000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1580228822124">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580228822124" />
+    <state x="549" y="146" key="FileChooserDialogImpl" timestamp="1580236372232">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="146" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580236372232" />
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1580229304900">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580229304900" />
+    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1580229304900">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580229304900" />
+    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1580229304900">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580229304900" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1580229304900">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580229304900" />
+    <state x="209" y="40" key="new project wizard" timestamp="1580229303243">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="40" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580229303243" />
+  </component>
+</project>
