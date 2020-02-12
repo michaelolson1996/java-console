@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Circle implements Shape {
     private double radius;
+    private Square square;
 
     public Circle() {}
 

@@ -59,7 +59,7 @@ public class ZombieCreator {
         ui.displayPrompt(zg.displayHorde());
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         ZombieCreator zc = new ZombieCreator();
         zc.exec();
     }

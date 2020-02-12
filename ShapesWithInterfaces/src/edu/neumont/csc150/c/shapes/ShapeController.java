@@ -43,7 +43,7 @@ public class ShapeController implements Runnable {
         view.showMessage("Enter side length (1 - 100)");
         double sideLength = view.getDoubleFromUser(1, 100);
         Square s = new Square(sideLength);
-        this.model.add(s);
+        this.model.add((Shape) s);
     }
 
     private void onAddCircle() throws IOException {
