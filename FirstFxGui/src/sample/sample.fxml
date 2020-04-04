@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<?import javafx.scene.layout.GridPane?>-->
+
+<BorderPane minHeight="272.0" minWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Rest Count" />
+                <MenuItem onAction="#onExitClick" text="Exit" />
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <Button onAction="#onButtonClick">Click Me</Button>
+    </center>
+    <left>
+        <TextField fx:id="myTextField" />
+    </left>
+    <right>
+        <VBox>
+            <Label>Hi</Label>
+            <Label>There</Label>
+        </VBox>
+    </right>
+    <bottom>
+        <Label fx:id="statusLabel">It's all good</Label>
+    </bottom>
+</BorderPane>

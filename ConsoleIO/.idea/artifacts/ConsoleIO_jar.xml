@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ConsoleIO:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ConsoleIO_jar</output-path>
+    <root id="archive" name="ConsoleIO.jar">
+      <element id="module-output" name="ConsoleIO" />
+    </root>
+  </artifact>
+</component>

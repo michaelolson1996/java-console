@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="294df07e-cc86-4b78-990f-007e830e50d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Cutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Cutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Doubler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Doubler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Reverser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/Reverser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/VowelReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeScrambler/src/edu/neumont/csc150/c/codescrambler/models/VowelReplacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConnectFour/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstLookFileIO/FirstLookFileIO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/out/production/ConnectFour/edu/neumont/csc150/c/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFour/out/production/ConnectFour/edu/neumont/csc150/c/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/controller/GameController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/ConnectFour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFour/src/edu/neumont/csc150/c/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SubClassified/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SubClassified/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zombiegenerator_michaelolson_lab4/neumont/csc150/c/zombie/ZombieCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zombiegenerator_michaelolson_lab4/neumont/csc150/c/zombie/ZombieCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neumont/csc150/c/zombie/ZombieCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neumont/csc150/c/zombie/ZombieCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CodeScrambler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="ZombieCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -92,6 +97,7 @@
       <workItem from="1581001655134" duration="316000" />
       <workItem from="1581267709321" duration="5237000" />
       <workItem from="1581274812578" duration="33000" />
+      <workItem from="1581615536298" duration="661000" />
     </task>
     <servers />
   </component>
