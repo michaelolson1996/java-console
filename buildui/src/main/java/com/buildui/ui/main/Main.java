@@ -16,11 +16,16 @@ public class Main extends Application {
     private double offSetX = 0;
     private double offSetY = 0;
 
+    public int displayHello(int a, int b) {
+        return (a * b);
+    }
+
     @Override
     public void start(Stage stage) {
         try {
-            URL url = new File("src/main/java/com/buildui/ui/login/login.fxml").toURI().toURL();
-            Parent root = FXMLLoader.load(url);
+//            URL url = new File("/fxml/login.fxml").toURI().toURL();
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
+            root.getStylesheets().add(("/styles/main.css"));
             stage.initStyle(StageStyle.TRANSPARENT);
 
             root.setOnMousePressed(e -> {

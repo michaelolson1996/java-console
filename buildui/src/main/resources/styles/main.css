@@ -1,0 +1,124 @@
+*
+{
+    -fx-bg: #312f2f;
+    -fx-main-green: #7be0ad;
+    -fx-main-blue: #86ba90;
+    -fx-blue: #3d52d5;
+    -fx-main-purple: #f000f0;
+    -fx-main-red: #a50104;
+}
+
+.root
+{
+    -fx-background-color: -fx-bg;
+}
+
+/*       Buttons       */
+
+/*Control Buttons*/
+
+.control-buttons
+{
+    -fx-background-radius: 50;
+    -fx-max-height: 15;
+    -fx-min-height: 15;
+    -fx-min-width:15;
+    -fx-max-width: 15;
+    -fx-cursor: hand;
+}
+
+#exit-button
+{
+    -fx-background-color: red;
+}
+
+#minimize-button
+{
+    -fx-background-color: yellow;
+}
+
+#maximize-button
+{
+    -fx-background-color: green;
+}
+
+#login-title
+{
+    -fx-fill: -fx-main-blue;
+    -fx-font-weight: bold;
+}
+
+.login_inputs
+{
+    -fx-text-fill: -fx-main-blue;
+    -fx-prompt-text-fill: -fx-main-blue;
+    -jfx-focus-color:-fx-main-blue;
+}
+
+.login-button
+{
+    -fx-border-color: -fx-main-blue;
+    -fx-text-fill: -fx-main-blue;
+    -fx-pref-width: 90;
+    -fx-pref-height: 40;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+}
+
+.login-button:hover
+{
+    -fx-background-color: -fx-main-blue;
+    -fx-text-fill: -fx-bg;
+}
+
+#forgot-button
+{
+    -fx-border-color: none;
+    -fx-background-color: none;
+    -fx-text-fill: -fx-main-blue;
+}
+
+#nav
+{
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: -fx-main-blue;
+    -fx-padding: 2 30 2 30;
+}
+
+#hamburger StackPane
+{
+    -fx-background-color: -fx-main-blue;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.nav-buttons
+{
+    -fx-cursor: hand;
+    -fx-pref-height: 60;
+    -fx-pref-width: 200;
+    -fx-text-alignment: center;
+    -fx-text-fill: -fx-main-blue;
+    -fx-background-color: -fx-bg;
+}
+
+.nav-buttons:hover
+{
+    -fx-background-color: -fx-main-blue;
+    -fx-text-fill: -fx-bg;
+    -fx-border-color: -fx-main-blue;
+}
+
+#nav-drawer
+{
+    -fx-pref-width: 200;
+    -fx-border-color: -fx-main-blue;
+    -fx-border-width: 2px 0px 3px 2px;
+}
+
+#icons
+{
+    -fx-font-family: FontAwesome;
+}

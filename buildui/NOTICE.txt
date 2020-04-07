@@ -1,0 +1,1 @@
+information about third-party libraries used in the project

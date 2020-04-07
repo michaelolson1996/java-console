@@ -36,8 +36,8 @@ public class LoginController {
     private void loadMain() {
         try {
             ResizeListener rl = new ResizeListener();
-            URL url = new File("src/main/java/com/buildui/ui/main/main.fxml").toURI().toURL();
-            Parent root = FXMLLoader.load(url);
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
+            root.getStylesheets().add(("/styles/main.css"));
             root.setOnMouseDragged(rl);
             root.setOnMousePressed(rl);
             root.setOnMouseMoved(rl);
