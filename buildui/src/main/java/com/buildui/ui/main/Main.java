@@ -1,5 +1,6 @@
 package com.buildui.ui.main;
 
+import com.buildui.ui.login.LoginController;
 import com.buildui.util.EnvironmentBuilderUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -23,8 +24,14 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
-//            URL url = new File("/fxml/login.fxml").toURI().toURL();
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
+            System.out.println(
+
+                    com.sun.javafx.runtime.VersionInfo.getRuntimeVersion()
+
+);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/login.fxml"));
+            Parent root = loader.load();
             root.getStylesheets().add(("/styles/main.css"));
             stage.initStyle(StageStyle.TRANSPARENT);
 
