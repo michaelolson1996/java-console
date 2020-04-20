@@ -14,6 +14,12 @@ public class MainTest {
     public void shouldSayHello() {
         Main tester = new Main();
         assertEquals(0, tester.displayHello(0, 9), "should return 0");
+
+    }
+
+    @Test
+    public void shouldBeZero() {
+        assertEquals(0, 0, "should return zero");
     }
 
 
