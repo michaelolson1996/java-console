@@ -1,9 +1,0 @@
-com\buildui\ui\main\Main.class
-com\buildui\ui\main\MainController.class
-com\buildui\util\ResizeListener.class
-com\buildui\ui\controller\NavBar.class
-com\buildui\util\EnvironmentBuilderUtil.class
-com\buildui\ui\controller\SettingsController.class
-com\buildui\ui\controller\NewProjectController.class
-com\buildui\ui\controller\DashboardController.class
-com\buildui\ui\login\LoginController.class
