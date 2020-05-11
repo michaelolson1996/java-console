@@ -1,18 +1,6 @@
-package com.buildui.ui.main;
+package com.buildui.ui.dashboard;
 
-//import com.jfoenix.controls.JFXHamburger;
-//import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
-//import javafx.event.ActionEvent;
-//import javafx.fxml.FXML;
-//import javafx.fxml.Initializable;
-//import javafx.scene.Node;
-//import javafx.scene.input.MouseEvent;
-//import javafx.scene.layout.VBox;
-//import javafx.stage.Stage;
-//import java.net.URL;
-//import java.util.ResourceBundle;
 import com.jfoenix.controls.JFXHamburger;
-//import com.jfoenix.controls.JFXHamburger;
 import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,12 +13,12 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable {
+public class DashboardController implements Initializable {
 
-    @FXML
-    private JFXHamburger hamburger;
-    @FXML
-    private VBox navdrawer;
+//    @FXML
+//    private JFXHamburger hamburger;
+//    @FXML
+//    private VBox navdrawer;
 
     @FXML
     private void handlePageChange(ActionEvent event) {
@@ -56,15 +44,15 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        HamburgerBasicCloseTransition burgerTask = new HamburgerBasicCloseTransition(hamburger);
-        burgerTask.setRate(-1);
-        hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
-            burgerTask.setRate(burgerTask.getRate() * -1);
-            burgerTask.play();
-            if (burgerTask.getRate() > 0)
-                navdrawer.setVisible(true);
-            else
-                navdrawer.setVisible(false);
-        });
+//        HamburgerBasicCloseTransition burgerTask = new HamburgerBasicCloseTransition(hamburger);
+//        burgerTask.setRate(-1);
+//        hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
+//            burgerTask.setRate(burgerTask.getRate() * -1);
+//            burgerTask.play();
+//            if (burgerTask.getRate() > 0)
+//                navdrawer.setVisible(true);
+//            else
+//                navdrawer.setVisible(false);
+//        });
     }
 }

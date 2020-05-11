@@ -1,8 +1,7 @@
 *
 {
-    -fx-bg: #312f2f;
-    -fx-main-green: #7be0ad;
-    -fx-main-blue: #86ba90;
+    -fx-bg: #4059AD;
+    -fx-main-blue: #FFFBFE;
     -fx-blue: #3d52d5;
     -fx-main-purple: #f000f0;
     -fx-main-red: #a50104;
@@ -42,6 +41,18 @@
     -fx-background-color: green;
 }
 
+#title
+{
+    -fx-padding: 0 0 40 0;
+    -fx-spacing: 1px;
+}
+
+#title-font
+{
+    -fx-text-fill: -fx-main-blue;
+    -fx-fill: -fx-main-blue;
+}
+
 #login-title
 {
     -fx-fill: -fx-main-blue;
@@ -52,37 +63,39 @@
 {
     -fx-text-fill: -fx-main-blue;
     -fx-prompt-text-fill: -fx-main-blue;
-    -jfx-focus-color:-fx-main-blue;
+    -jfx-focus-color: -fx-main-blue;
+    -jfx-unfocus-color:transparent;
 }
 
-.login-button
+#login-buttons-wrap
 {
-    -fx-border-color: -fx-main-blue;
+    -fx-padding: 20 0 0 0;
+}
+
+.login-buttons
+{
+    -fx-border-color: transparent;
     -fx-text-fill: -fx-main-blue;
     -fx-pref-width: 90;
     -fx-pref-height: 40;
     -fx-border-radius: 30;
     -fx-background-radius: 30;
     -fx-cursor: hand;
-}
-
-.login-button:hover
-{
     -fx-background-color: -fx-main-blue;
     -fx-text-fill: -fx-bg;
 }
 
 #forgot-button
 {
+    -fx-padding: 20 0 20 0;
     -fx-border-color: none;
     -fx-background-color: none;
     -fx-text-fill: -fx-main-blue;
+    -fx-cursor: hand;
 }
 
 #nav
 {
-    -fx-border-width: 0px 0px 2px 0px;
-    -fx-border-color: -fx-main-blue;
     -fx-padding: 2 30 2 30;
 }
 
@@ -94,14 +107,23 @@
     -fx-cursor: hand;
 }
 
+#dashboard-title
+{
+    -fx-text-fill: -fx-main-blue;
+    -fx-fill: -fx-main-blue;
+}
+
 .nav-buttons
 {
     -fx-cursor: hand;
-    -fx-pref-height: 60;
-    -fx-pref-width: 200;
+    -fx-alignment: center;
     -fx-text-alignment: center;
     -fx-text-fill: -fx-main-blue;
     -fx-background-color: -fx-bg;
+    -fx-pref-height: 60;
+    -fx-max-width: 300;
+    -fx-pref-width: 300;
+    -fx-min-width: 300;
 }
 
 .nav-buttons:hover
@@ -113,9 +135,9 @@
 
 #nav-drawer
 {
-    -fx-pref-width: 200;
-    -fx-border-color: -fx-main-blue;
-    -fx-border-width: 2px 0px 3px 2px;
+    /*-fx-pref-width: 200;*/
+    /*-fx-border-color: -fx-main-blue;*/
+    /*-fx-border-width: 0px 0px 0px 0px;*/
 }
 
 #icons

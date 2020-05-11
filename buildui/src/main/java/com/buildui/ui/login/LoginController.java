@@ -1,20 +1,15 @@
 package com.buildui.ui.login;
 
-import com.buildui.util.ResizeListener;
+import com.buildui.util.StageBuilder;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 
 public class LoginController {
+
+    private StageBuilder stageBuilder = new StageBuilder();
 
     @FXML
     private JFXTextField username;
@@ -22,10 +17,10 @@ public class LoginController {
     private JFXPasswordField password;
 
     @FXML
-    private void handleLoginButtonAction(ActionEvent actionEvent) {
+    private void handleLoginButtonAction(ActionEvent actionEvent) throws Exception {
         if (validateCredentials()) {
-            closeStage();
-            loadMain();
+            stageBuilder.closeStage((Stage) username.getScene().getWindow());
+            stageBuilder.buildStage(new Stage(), "/fxml/dashboard.fxml", 1000, 800, true);
         }
     }
 
@@ -33,31 +28,13 @@ public class LoginController {
         return true;
     }
 
-    private void loadMain() {
-        try {
-            ResizeListener rl = new ResizeListener();
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
-            root.getStylesheets().add(("/styles/main.css"));
-            root.setOnMouseDragged(rl);
-            root.setOnMousePressed(rl);
-            root.setOnMouseMoved(rl);
-            Stage stage = new Stage(StageStyle.TRANSPARENT);
-            stage.setScene(new Scene(root, 1000, 800));
-            stage.show();
-        }
-        catch(IOException ex) {
-            System.out.println(ex);
-        }
-    }
+    private void loadSignUp() {
 
-    @FXML
-    private void closeStage() {
-        ((Stage) username.getScene().getWindow()).close();
     }
 
     @FXML
     private void exit(ActionEvent actionEvent) {
-        ((Stage) username.getScene().getWindow()).close();
+        stageBuilder.closeStage((Stage) username.getScene().getWindow());
         System.exit(0);
     }
 }

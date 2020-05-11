@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<!--<?import com.jfoenix.controls.JFXHamburger?>-->
+<!--<?import com.jfoenix.controls.JFXDrawer?>-->
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" stylesheets="@../styles/main.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.buildui.ui.dashboard.DashboardController">
+    <children>
+        <HBox id="nav" prefHeight="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_RIGHT" spacing="10" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button id="minimize-button" onAction="#minimize" styleClass="control-buttons" />
+                        <Button id="maximize-button" onAction="#maximize" styleClass="control-buttons" />
+                        <Button id="exit-button" onAction="#exit" styleClass="control-buttons" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+<!--        <JFXHamburger fx:id="hamburger" id="hamburger" prefHeight="50" prefWidth="50" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0"></JFXHamburger>-->
+        <VBox id="nav-drawer" fx:id="navdrawer" maxHeight="1000.0" maxWidth="400.0" minHeight="-Infinity" minWidth="300.0" prefHeight="800.0" prefWidth="300.0">
+         <VBox prefHeight="332.0" prefWidth="300.0">
+            <children>
+               <GridPane prefHeight="326.0" prefWidth="300.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="113.4" minHeight="8.400002861022955" prefHeight="95.4" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="233.80001525878907" minHeight="10.0" prefHeight="228.6" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                        <children>
+                           <Circle fill="#ffffff" layoutX="150.0" layoutY="100.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+                        </children></AnchorPane>
+                      <StackPane prefHeight="150.0" prefWidth="200.0" >
+                          <children>
+                              <Text id="dashboard-title">
+                                  <font>
+                                      <Font size="40" />
+                                  </font>
+                                  SuBuild
+                              </Text>
+                          </children>
+                      </StackPane>
+                  </children>
+               </GridPane>
+            </children>
+         </VBox>
+         <VBox prefHeight="358.0" prefWidth="300.0">
+            <children>
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Dashboard
+                  </Button>
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+      <!--                <FontAwesomeIconView id="icons" glyphSize="12" size="60"></FontAwesomeIconView>-->
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Projects
+                  </Button>
+
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+      <!--                <FontAwesomeIconView id="icons" glyphName="USER" glyphSize="12" size="60"></FontAwesomeIconView>-->
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Documentation
+                  </Button>
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Account
+                  </Button>
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Settings
+                  </Button>
+                  <Button onAction="#handlePageChange" styleClass="nav-buttons">
+                      <font>
+                          <Font size="16" />
+                      </font>
+                      Log Out
+                  </Button>
+            </children>
+         </VBox>
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+        </VBox>
+    </children>
+</AnchorPane>
