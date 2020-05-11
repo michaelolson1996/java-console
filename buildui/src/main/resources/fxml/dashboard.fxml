@@ -39,7 +39,7 @@
                         <children>
                            <Circle fill="#ffffff" layoutX="150.0" layoutY="100.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
                         </children></AnchorPane>
-                      <StackPane prefHeight="150.0" prefWidth="200.0" >
+                      <StackPane prefHeight="150.0" prefWidth="200.0">
                           <children>
                               <Text id="dashboard-title">
                                   <font>
@@ -98,5 +98,12 @@
          </VBox>
          <HBox prefHeight="100.0" prefWidth="200.0" />
         </VBox>
+        <StackPane layoutX="300.0" layoutY="46.0" prefHeight="754.0" prefWidth="700.0">
+            <children>
+                <HBox styleClass="login-buttons" prefHeight="740.0" prefWidth="690.0">
+
+                </HBox>
+            </children>
+        </StackPane>
     </children>
 </AnchorPane>
