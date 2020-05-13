@@ -1,6 +1,6 @@
 package com.michael.calcengine;
 
-public enum MathCommand {
+enum MathCommand {
     Add,
     Subtract,
     Multiply,

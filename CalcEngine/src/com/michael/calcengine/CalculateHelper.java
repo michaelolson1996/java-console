@@ -6,20 +6,17 @@ public class CalculateHelper {
     private static final char MULTIPLY_SYMBOL = '*';
     private static final char DIVIDE_SYMBOL = '/';
 
-    MathCommand command;
-    double leftValue;
-    double rightValue;
-    double result;
+    private MathCommand command;
+    private double leftValue;
+    private double rightValue;
+    private double result;
 
     public void process(String statement) throws InvalidStatementException {
         String[] parts = statement.split(" ");
         if (parts.length != 3)
             throw new InvalidStatementException("Incorrect Number of Fields", statement);
 
-
-
         String commandString = parts[0];
-
         try {
             leftValue = Double.parseDouble(parts[1]);
             rightValue = Double.parseDouble(parts[2]);

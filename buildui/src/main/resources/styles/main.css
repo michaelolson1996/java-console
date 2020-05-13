@@ -140,6 +140,10 @@
     /*-fx-border-width: 0px 0px 0px 0px;*/
 }
 
+#dashboard-main {
+    -fx-background-color: -fx-main-blue;
+}
+
 #icons
 {
     -fx-font-family: FontAwesome;
