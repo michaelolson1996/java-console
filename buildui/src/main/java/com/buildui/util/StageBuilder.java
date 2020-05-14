@@ -8,46 +8,58 @@ import javafx.stage.StageStyle;
 
 public class StageBuilder {
 
-    private ResizeListener rl = new ResizeListener();
+    private ResizeListener rl;
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+    private FXMLLoader loader;
     private double offSetX = 0;
     private double offSetY = 0;
 
     public StageBuilder() {}
 
-    public void buildStage(
-            Stage stage,
-            String location,
-            int width,
-            int height,
-            boolean isResizable) throws Exception {
+    public Stage getStage() {
+        return this.stage;
+    }
 
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(location));
-        Parent root = loader.load();
-        stage.initStyle(StageStyle.TRANSPARENT);
+    public void buildStage(String location,
+                           int width,
+                           int height,
+                           boolean isResizable) throws Exception
+    {
+        this.loader = new FXMLLoader();
+        this.loader.setLocation(getClass().getResource(location));
+        this.root = loader.load();
+        this.rl = new ResizeListener();
+        this.stage = new Stage();
+        this.stage.initStyle(StageStyle.TRANSPARENT);
 
-        if (isResizable) {
-            root.setOnMouseDragged(rl);
-            root.setOnMousePressed(rl);
-            root.setOnMouseMoved(rl);
-            root.setOnMouseReleased(rl);
+        if (isResizable)
+        {
+            this.root.setOnMouseDragged(this.rl);
+            this.root.setOnMousePressed(this.rl);
+            this.root.setOnMouseMoved(this.rl);
+            this.root.setOnMouseReleased(this.rl);
         }
-        else {
-            root.setOnMousePressed(e -> {
-                offSetX = e.getSceneX();
-                offSetY = e.getSceneY();
+        else
+        {
+            this.root.setOnMousePressed(e ->
+            {
+                this.offSetX = e.getSceneX();
+                this.offSetY = e.getSceneY();
             });
 
-            root.setOnMouseDragged(e -> {
-                stage.setX(e.getScreenX() - offSetX);
-                stage.setY(e.getScreenY() - offSetY);
+            this.root.setOnMouseDragged(e ->
+            {
+                this.stage.setX(e.getScreenX() - this.offSetX);
+                this.stage.setY(e.getScreenY() - this.offSetY);
             });
         }
 
-        Scene scene = new Scene(root, width, height);
-        stage.setScene(scene);
-        stage.setResizable(isResizable);
-        stage.show();
+        this.scene = new Scene(this.root, width, height);
+        this.stage.setScene(scene);
+        this.stage.setResizable(isResizable);
+        this.stage.show();
     }
 
     public void closeStage(Stage stage) {

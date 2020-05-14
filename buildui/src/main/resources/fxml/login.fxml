@@ -46,14 +46,14 @@
                     <JFXButton onAction="#handleLoginButtonAction" styleClass="login-buttons" text="Log In"></JFXButton>
                 </HBox>
                 <HBox prefWidth="140" alignment="CENTER_RIGHT">
-                    <JFXButton styleClass="login-buttons" text="Sign Up"></JFXButton>
+                    <JFXButton onAction="#handleSignUpButtonAction" styleClass="login-buttons" text="Sign Up"></JFXButton>
                 </HBox>
             </HBox>
             <Button id="forgot-button" alignment="BOTTOM_CENTER" maxWidth="560">
                 <font>
                     <Font size="14.0" />
                 </font>
-                I forgot my password / username
+                Forgot your password?
             </Button>
         </VBox>
     </children>

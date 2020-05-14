@@ -13,28 +13,49 @@ public class LoginController {
 
     @FXML
     private JFXTextField username;
+
     @FXML
     private JFXPasswordField password;
 
     @FXML
-    private void handleLoginButtonAction(ActionEvent actionEvent) throws Exception {
-        if (validateCredentials()) {
-            stageBuilder.closeStage((Stage) username.getScene().getWindow());
-            stageBuilder.buildStage(new Stage(), "/fxml/dashboard.fxml", 1000, 800, true);
+    private void handleLoginButtonAction ()
+    {
+        try
+        {
+            if (validateCredentials())
+            {
+                stageBuilder.closeStage((Stage) username.getScene().getWindow());
+                stageBuilder.buildStage( "/fxml/dashboard.fxml", 1000, 800, true);
+            }
         }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void handleSignUpButtonAction() {
+        try
+        {
+            stageBuilder.closeStage((Stage) username.getScene().getWindow());
+            stageBuilder.buildStage("/fxml/signup.fxml", 550, 700, false);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void exit() {
+        stageBuilder.closeStage((Stage) username.getScene().getWindow());
+        System.exit(0);
     }
 
     private boolean validateCredentials() {
         return true;
-    }
-
-    private void loadSignUp() {
-
-    }
-
-    @FXML
-    private void exit(ActionEvent actionEvent) {
-        stageBuilder.closeStage((Stage) username.getScene().getWindow());
-        System.exit(0);
     }
 }
