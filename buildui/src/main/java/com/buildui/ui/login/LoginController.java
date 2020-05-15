@@ -40,7 +40,7 @@ public class LoginController {
         try
         {
             stageBuilder.closeStage((Stage) username.getScene().getWindow());
-            stageBuilder.buildStage("/fxml/signup.fxml", 550, 700, false);
+            stageBuilder.buildStage("/fxml/signup.fxml", 650, 700, false);
         }
         catch (Exception e)
         {

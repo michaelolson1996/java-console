@@ -65,6 +65,14 @@
     -fx-prompt-text-fill: -fx-main-blue;
     -jfx-focus-color: -fx-main-blue;
     -jfx-unfocus-color:transparent;
+    -fx-font-weight: 700;
+    -fx-padding: 0 0 0 20;
+}
+
+.login_inputs:focused
+{
+    /*-fx-text-fill:black;*/
+    -fx-prompt-text-fill: transparent;
 }
 
 #login-buttons-wrap
@@ -148,3 +156,11 @@
 {
     -fx-font-family: FontAwesome;
 }
+
+.jfx-radio-button
+{
+    -fx-text-fill: white;
+    -jfx-selected-color: white;
+    -jfx-unselected-color: white;
+}
+

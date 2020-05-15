@@ -38,8 +38,9 @@
                 </children>
             </HBox>
             <HBox prefHeight="80" alignment="BOTTOM_CENTER">
-                <JFXPasswordField fx:id="password" styleClass="login_inputs" labelFloat="true" prefHeight="33.0"
-                                  prefWidth="340.0" promptText="Password"/>
+                <children>
+                    <JFXPasswordField fx:id="password" styleClass="login_inputs" labelFloat="true" prefHeight="33.0" prefWidth="340.0" promptText="Password"/>
+                </children>
             </HBox>
             <HBox prefHeight="100" alignment="CENTER" id="login-buttons-wrap">
                 <HBox prefWidth="140" alignment="CENTER_LEFT">
