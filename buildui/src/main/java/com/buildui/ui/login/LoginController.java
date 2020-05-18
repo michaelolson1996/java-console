@@ -1,15 +1,12 @@
 package com.buildui.ui.login;
 
-import com.buildui.util.StageBuilder;
+import com.buildui.ui.StageController;
+import com.buildui.util.StageName;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.stage.Stage;
 
-public class LoginController {
-
-    private StageBuilder stageBuilder = new StageBuilder();
+public class LoginController extends StageController {
 
     @FXML
     private JFXTextField username;
@@ -20,38 +17,21 @@ public class LoginController {
     @FXML
     private void handleLoginButtonAction ()
     {
-        try
+        if (validateCredentials())
         {
-            if (validateCredentials())
-            {
-                stageBuilder.closeStage((Stage) username.getScene().getWindow());
-                stageBuilder.buildStage( "/fxml/dashboard.fxml", 1000, 800, true);
-            }
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
+            this.setNewStage(StageName.DASHBOARD);
         }
     }
 
     @FXML
-    private void handleSignUpButtonAction() {
-        try
-        {
-            stageBuilder.closeStage((Stage) username.getScene().getWindow());
-            stageBuilder.buildStage("/fxml/signup.fxml", 650, 700, false);
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
+    private void handleSignUpButtonAction()
+    {
+        this.setNewStage(StageName.SIGN_UP);
     }
 
     @FXML
     private void exit() {
-        stageBuilder.closeStage((Stage) username.getScene().getWindow());
+        this.closeStage();
         System.exit(0);
     }
 

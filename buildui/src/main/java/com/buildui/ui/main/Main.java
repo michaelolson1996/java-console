@@ -1,7 +1,8 @@
 package com.buildui.ui.main;
 
+import com.buildui.ui.StageController;
 import com.buildui.util.EnvironmentBuilderUtil;
-import com.buildui.util.StageBuilder;
+import com.buildui.util.StageName;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -10,15 +11,7 @@ public class Main extends Application
     @Override
     public void start(Stage stage)
     {
-        try
-        {
-            new StageBuilder().buildStage("/fxml/login.fxml", 560, 480, false);
-        }
-        catch(Exception err)
-        {
-            System.out.println(err.getMessage());
-            err.printStackTrace();
-        }
+        new StageController().setNewStage(StageName.LOG_IN);
     }
 
     public static void main(String[] args)

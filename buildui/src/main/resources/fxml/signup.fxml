@@ -6,9 +6,10 @@
 <?import javafx.scene.text.*?>
 
 <?import com.jfoenix.controls.JFXTextField?>
-
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+
 <GridPane stylesheets="@../styles/main.css, @../styles/login.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.buildui.ui.login.SignUpController">
 
     <columnConstraints>
@@ -48,7 +49,7 @@
                 </Text>
             </children>
         </VBox>
-         <HBox prefWidth="650.0" prefHeight="100.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+         <HBox prefHeight="100.0" prefWidth="650.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
              <children>
                 <HBox alignment="BOTTOM_CENTER" prefWidth="325" HBox.hgrow="NEVER">
                    <children>
@@ -80,17 +81,17 @@
             <children>
                 <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="325.0">
                     <children>
-                        <JFXTextField styleClass="login_inputs" prefWidth="250" labelFloat="true" promptText="username"></JFXTextField>
+                        <JFXTextField styleClass="login_inputs" prefWidth="250" labelFloat="true" promptText="birthday"></JFXTextField>
                     </children>
                 </HBox>
                 <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="325.0">
                     <children>
-                        <JFXTextField styleClass="login_inputs" prefWidth="250" labelFloat="true" promptText="birthday"></JFXTextField>
+                        <JFXTextField styleClass="login_inputs" prefWidth="250" labelFloat="true" promptText="username"></JFXTextField>
                     </children>
                 </HBox>
             </children>
         </HBox>
-        <HBox prefHeight="100.0" minHeight="100" maxHeight="100" prefWidth="650.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+        <HBox maxHeight="100" minHeight="100" prefHeight="100.0" prefWidth="650.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
             <children>
                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="325.0">
                     <children>
@@ -104,21 +105,25 @@
                 </HBox>
             </children>
         </HBox>
-      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="550.0" spacing="20.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="580.0" spacing="20.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
          <children>
              <JFXRadioButton styleClass="signup-radio-buttons">I accept the Terms and Conditions</JFXRadioButton>
              <JFXRadioButton styleClass="signup-radio-buttons">Please notify me about information relevant to me</JFXRadioButton>
              <JFXRadioButton styleClass="signup-radio-buttons">Subscribe to the SuBuild monthly newsletter</JFXRadioButton>
-<!--             <JFXRadioButton></JFXRadioButton>-->
-<!--             <JFXRadioButton></JFXRadioButton>-->
-<!--            <RadioButton contentDisplay="TEXT_ONLY" mnemonicParsing="false" mouseTransparent="true" selected="true" styleClass="signup-radio-buttons" text="I accept the Terms and Conditions" textFill="WHITE" />-->
-<!--            <RadioButton mnemonicParsing="false" styleClass="signup-radio-buttons" text="Please notify me about information relevant to me" />-->
-<!--            <RadioButton mnemonicParsing="false" styleClass="signup-radio-buttons" text="Subscribe to the SuBuild monthly newsletter" />-->
          </children>
          <padding>
-            <Insets left="100.0" />
+            <Insets left="140.0" />
          </padding>
       </VBox>
-        <HBox prefHeight="90.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+
+        <HBox prefHeight="90.0" prefWidth="650.0" GridPane.columnSpan="2" GridPane.rowIndex="7" alignment="CENTER">
+            <HBox alignment="TOP_CENTER" maxWidth="275" minWidth="275" prefWidth="275">
+            <children>
+                <JFXButton onAction="#handleSignUpSubmitAction" styleClass="login-buttons" text="Sign Up"></JFXButton>
+            </children></HBox>
+            <HBox alignment="TOP_CENTER" maxWidth="275" minWidth="275" prefWidth="275">
+                <JFXButton styleClass="login-buttons" text="Log In"></JFXButton>
+            </HBox>
+        </HBox>
     </children>
 </GridPane>
